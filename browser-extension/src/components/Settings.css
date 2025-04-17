@@ -1,0 +1,151 @@
+.settings-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #333;
+}
+
+.settings-container.in-popup {
+  max-width: 100%;
+  padding: 0;
+}
+
+.settings-container h1 {
+  color: #444;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-top: 0;
+  font-size: 1.6em;
+}
+
+.settings-section {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.settings-container.in-popup .settings-section {
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #555;
+  font-size: 1.2em;
+  margin-bottom: 12px;
+}
+
+.setting-row {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-row {
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox-row input {
+  margin-right: 8px;
+  width: auto;
+}
+
+.checkbox-row label {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+input, select, textarea {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.test-button {
+  width: fit-content;
+  margin-top: 4px;
+  background-color: #67c23a;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.test-button:hover {
+  background-color: #5daf34;
+}
+
+.save-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #3a80d2;
+}
+
+.status-indicator {
+  margin: 8px 0 12px;
+  font-size: 14px;
+}
+
+.status-ok {
+  color: #67c23a;
+  margin-left: 6px;
+  font-weight: 600;
+}
+
+.status-error {
+  color: #f56c6c;
+  margin-left: 6px;
+  font-weight: 600;
+}
+
+.save-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status-message {
+  margin-top: 8px;
+  padding: 6px 10px;
+  background-color: #f0f9eb;
+  color: #67c23a;
+  border-radius: 4px;
+  font-size: 14px;
+  animation: fadeIn 0.3s;
+}
+
+.setting-description {
+  font-size: 12px;
+  color: #666;
+  margin: 4px 0 0;
+  font-style: italic;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
